@@ -29,11 +29,21 @@ function creatHistory(amount, placeName) {
 
 }
 
-function showElement(id){
+
+
+document.getElementById('donation-button').addEventListener('click', function(){
+    console.log('hello')
+       showElement('donation-section')
+   })
+   
+   document.getElementById('history-button').addEventListener('click', function(){
+    console.log('done')
+       showElement('history-container')
+   })
+
+   function showElement(id){
     document.getElementById('history-container').classList.add('hidden')
     document.getElementById(id).classList.remove('hidden')
     document.getElementById('donation-section').classList.add('hidden')
     document.getElementById(id).classList.remove('hidden')
 }
-
-
