@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   
+  <title>Blog </title>
+    <style>
+        .font-lex{
+          font-family: "Lexend", system-ui;
+        }
+      </style>
+</head>
+    
+
+<body class="font-lex">
+    
+    <header>
+      <div class="bg[#F9F7F3]">
+        <nav class="w-4/5 flex md:flex-row flex-col mx-auto md:justify-between items-center py-4">
+          <div><a href="./index.html" id=""
+              class="md:px-4 md:py-2 px-2 py-1 md:text-xl rounded-xl font-bold bg-[#B4F461] text-black border-none">Home</a>
+          </div>
+  
+          <div class="flex items-center gap-4 ">
+            <img src="./assets/logo.png" alt="" class="w-8 h-8 md:w-12 md:h-12">
+  
+            <h3 class="md:text-xl font-bold text-black">Donate Bangladesh</h3>
+          </div>
+  
+          <div class="flex gap-3 items-center ">
+            <img src="./assets/coin.png" alt="" class="w-5 h-5">
+            <p id="account" class="font-semibold md:text-xl text-gray-400">5500</p>
+            <p class="font-semibold md:text-xl text-gray-400">BDT</p>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="w-4/5 mx-auto mt-12">
+
+      <div class="flex justify-center gap-3">
+        <h4 class="text-4xl text-black font-bold">Impotent FAQ</h4>
+        <i class="fa-solid fa-clipboard-question text-black text-3xl"></i>
+      </div>
+
+      <div class="mt-10">
+        <div class="join join-vertical w-full">
+         
+          <!-- Question One -->
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is (DOM)?</div>
+              <div class="collapse-content">
+                <p>The DOM (Document Object Model) is a structured representation of an HTML document. It allows JavaScript to interact with and modify the content, structure, and style of a web page dynamically.</p>
+              </div>
+            </div>
+           
+            <!-- Question Two -->
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+              <div class="collapse-content">
+                <p>You can select DOM elements in JavaScript using these methods:<br>
+                    <ol>
+                      <li>1.getElementById()</li>
+                      <li>2.getElementsByClassName()</li>
+                      <li>3.getElementsByTagName()</li>
+                      <li>4.querySelector()</li>
+                      <li>5.querySelectorAll()</li>
+                    </ol>
+                    
+                    </p>
+                </p>
+              </div>
+            </div>
+           
+            <!-- Question Three -->
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-content">
+                <p>
+                  Event delegation is a technique where you attach a single event listener to a parent element instead of adding listeners to multiple child elements. It works by taking advantage of event bubbling, where events triggered on child elements propagate up to their parent
+                  <br>
+                  <p>This is useful because:
+
+                  </p>
+                  
+                    <ul>
+                      <li>Reduces memory usage by using fewer event listeners.</li>
+                      <li>Handles dynamic elements efficiently without needing to reattach listeners.</li>
+                    </ul>
+                </p>
+              </div>
+            </div>
+        
+            <!-- Question Four -->
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p>There are many ways to manipulate an element's attributes and styles using the DOM:
+                    <ul>
+                        <li>1.setAttribute()</li>
+                        <li>2.getAttribute()</li>
+                        <li>3.removeAttribute()</li>
+                    </ul>
+                    <p>For styling:</p>
+                    <p>One can directly set the 'style' property of an element</p>
+                    <p>One can use the 'classList' property to add, remove, or toggle classes</p>
+                  </p>
+                </div>
+              </div>
+          </div>
+    </div>
+    </main>
+</body>
+</html>
